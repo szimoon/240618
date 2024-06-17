@@ -8,7 +8,7 @@ media_order: 'untitled.png,230110_ruum_v.png,Future_Skills_006.png,230110_ruum_v
 ~~Dear supi Diary~~
 
 ~~Es git en Gaggi, uf em Dach,~~
-##er scheint ganz glücklich, das isch sii Sach.~
+##er scheint gaaaaanz glücklich, das isch sii Sach.~
 Er gackert und schart, wie es sich ghört,
 denn uf em Dach, do wird er ehrt.
 

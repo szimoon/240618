@@ -6,8 +6,6 @@ title: 2.1.1984
 
 Hallo
 
-
-
 Liebi Teilnehmerinne und Teilnehmer,
 
 Härzlech willkomme zur heutige Meditationsstund. Mir freue üs, dass Dir äch da sind und eui Zyt nehmt, um eui Geist z'beruhige und innezuhalte.
