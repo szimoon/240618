@@ -5,8 +5,7 @@ media_order: 'untitled.png,230110_ruum_v.png,Future_Skills_006.png,230110_ruum_v
 
 1.1.1984
 
-~~Dear Diary~~
-
+~~Dear supi Diary~~
 
 ~~Es git en Gaggi, uf em Dach,~~
 ##er scheint ganz glücklich, das isch sii Sach.~
