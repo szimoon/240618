@@ -1,0 +1,252 @@
+/* Core Stuff */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(to bottom, #b8d7cf 0%, #79d3c5 50%, #b8d7cf 100%);
+    /* This is a comment 
+    background-color: palevioletred;
+    */
+
+  margin: 2;
+    padding: 2;
+    height: 100%;
+    overflow: hidden; /* Prevent body from having its own scrollbar */
+
+    font-size: 2rem;
+    line-height: 1;
+    color: black;
+    text-align: left;
+    font-family: "Poetsen One", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+}
+
+a {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+a:hover {
+    color: mediumvioletred;
+}
+
+pre {
+    background: #F0F0F0;
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+blockquote {
+    border-left: 10px solid #eee;
+    margin: 0;
+    padding: 0rem 2rem;
+}
+
+/* Utility Classes */
+/* Rahmen um alles? */
+/*
+.wrapper {
+    margin: 1rem 1rem;
+    background-color: lightpink ;
+}
+
+.padding {
+    padding: 1rem 1rem;
+    background-color: lightpink;
+}
+*/
+
+
+.wrapper {
+    margin: 0 0em;
+    background-color: lightcoral;
+   /* padding: 0.5rem 0;  Adjusted to remove horizontal padding from affecting layout */
+    height: 100vh; /* Use full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y proximity; /* Enable vertical snap scrolling */
+    /*scroll-margin: 200px;  Adjust the proximity of snap points (20px is an example value) */
+
+}
+
+.image-container {
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.image-container img {
+    max-width: 97%; /* Set maximum width to container width */
+    height: 97vh; /* Set height to viewport height for full screen effect */
+    object-fit: contain; /* Maintain aspect ratio while fitting within container */
+    scroll-snap-align: center; /* Snap to the center of each image */
+    margin-bottom: 20px; /* Optional: Adds spacing between images */
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Content Styling */
+
+
+
+.header /*.padding*/ {
+    padding: 2rem 2rem;
+    position: fixed;
+    width: 100%;
+    color: #eee;
+    font-size: 2rem;
+}
+
+.header a {
+    color: black;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*background-color: #ffffff;  Example background color 
+    padding: 100px; Example padding */
+    text-align: center;
+    }
+
+/* Menu Settings */
+.main-nav ul {
+    text-align: left;
+    letter-spacing: 0em;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-nav ul li {
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+.main-nav ul li a {
+    position: relative;
+    display: block;
+    line-height: 45px;
+    color: black;
+    padding: 0 20px;
+   
+}
+
+.main-nav > ul > li > a {
+    border-radius: 2px;
+}
+
+/*Active dropdown nav item */
+.main-nav ul li:hover > a {
+    background-color: palegoldenrod;
+}
+
+/* Selected Dropdown nav item */
+.main-nav ul li.selected > a {
+    background-color: rgb(114, 179, 114);
+    color: black;
+}
+
+/* Dropdown CSS */
+.main-nav ul li {position: relative;}
+
+.main-nav ul li ul {
+    position: absolute;
+    /* background-color: #1F8DD6; */
+    min-width: 100%;
+    text-align: left;
+    z-index: 999;
+
+    display: none;
+}
+.main-nav ul li ul li {
+    display: block;
+}
+
+/* Dropdown CSS */
+.main-nav ul li ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/* Active on Hover */
+.main-nav li:hover > ul {
+    display: block;
+}
+
+/* Child Indicator */
+.main-nav .has-children > a {
+    padding-right: 30px;
+}
+.main-nav .has-children > a:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    position: absolute;
+    display: inline-block;
+    right: 8px;
+    top: 0;
+}
+
+.main-nav .has-children .has-children > a:after {
+    content: '\f105';
+}
+
+
+/* Center the dmenu (Diary Menu) text */
+ul.dmenu {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the text within the list items */
+}
+
+ul.dmenu > li {
+    display: block; /* Make list items stack vertically */
+    margin: 0 10px; /* Add some spacing between items */
+}
+
+ul.dmenu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the text color */
+}
+
+

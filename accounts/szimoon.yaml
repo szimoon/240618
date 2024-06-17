@@ -1,0 +1,11 @@
+state: enabled
+email: krebskrebs@gmail.com
+fullname: 'Simon Krebs'
+title: Administrator
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$6B3/Tm4QVddoSP0f/SrQPuLgayHNmKv8L5MalSNemrWE/enWh9edq

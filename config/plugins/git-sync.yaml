@@ -1,0 +1,31 @@
+enabled: true
+folders:
+  - pages
+SyncNotice: null
+sync:
+  on_save: true
+  on_delete: true
+  on_media: true
+  cron_enable: false
+  cron_at: '0 12,23 * * *'
+local_repository: null
+repository: 'https://github.com/szimoon/sz'
+no_user: '0'
+user: szimoon
+password: Airingxxx1
+webhook: /_git-sync-7464623d915f
+webhook_enabled: '0'
+webhook_secret: a038836ebbf594ae5ce67c84df3f9e5d4ef8ec0ab6a5ac58
+branch: master
+remote:
+  name: origin
+  branch: master
+git:
+  author: gituser
+  message: '(Grav GitSync) Automatic Commit'
+  name: GitSync
+  email: git-sync@trilby.media
+  bin: git
+  ignore: null
+  private_key: null
+logging: false

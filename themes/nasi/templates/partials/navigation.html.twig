@@ -1,0 +1,29 @@
+{% macro loop(page) %}
+    {% for p in page.children.visible %}
+        {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
+        <li class="{{ current_page|e }}">
+            <a href="{{ p.url|e }}">
+                {% if p.header.icon %}<i class="fa fa-{{ p.header.icon|e }}"></i>{% endif %}
+                {{ p.menu|e }}
+            </a>
+            {% if p.children.visible.count > 0 %}
+                <ul>
+                    {{ _self.loop(p) }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+{% endmacro %}
+
+<ul>
+    {{ _self.loop(pages) }}
+    {% for mitem in site.menu %}
+        <li>
+            <a href="{{ mitem.url|e }}">
+                {% if mitem.icon %}<i class="fa fa-{{ mitem.icon|e }}"></i>{% endif %}
+                {{ mitem.text|e }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+

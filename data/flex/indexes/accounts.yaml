@@ -1,0 +1,9 @@
+version: '1.2'
+timestamp: 1717537414
+count: 1
+index:
+  szimoon:
+    storage_key: szimoon
+    storage_timestamp: 1717537414
+    key: szimoon
+    email: krebskrebs@gmail.com

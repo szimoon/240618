@@ -1,0 +1,37 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    
+
+
+
+
+
+{% macro loop(children) %}
+    {% for p in children %}
+        {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
+        <li class="{{ current_page|e }}">
+            <a href="{{ p.url|e }}">
+             <!-- macht genau nüt  {% if p.header.icon %}<i class="fa fa-{{ p.header.icon|e }}"></i>{% endif %} -->
+                {{ p.menu|e }}
+            </a>
+            {% if p.children.visible.count > 0 %}
+                <ul>
+                    {{ _self.loop(p.children.visible) }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+{% endmacro %}
+
+<ul class="dmenu">
+    {{ _self.loop(page.children.visible) }}
+</ul>
+
+
+
+    {{ page.content|raw }} 
+
+
+
+{% endblock %}

@@ -1,0 +1,34 @@
+# user/themes/yourtheme/blueprints/dmenu.yaml
+
+title: dmenu
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.price:
+              type: text
+              label: Price
+            header.sku:
+              type: text
+              label: SKU
+
+        advanced:
+          type: tab
+          title: Advanced
+          fields:
+            overrides:
+              type: section
+              title: Overrides
+              underline: true
